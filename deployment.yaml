@@ -17,5 +17,6 @@ spec:
       containers:
       - name: udagram-frontend
         image: ricardiles/udagram-frontend
+        args: ["serve", "8100", "--address", "0.0.0.0"]
         ports:
         - containerPort: 8100
