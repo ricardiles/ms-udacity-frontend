@@ -14,6 +14,6 @@ WORKDIR /www/app
 RUN npm install
 RUN ionic build
 
-EXPOSE 8100
+EXPOSE 8100 35729
 
-CMD bash -c "ionic serve 8100 --adress 0.0.0.0"
+CMD ionic serve --all
